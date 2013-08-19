@@ -8,6 +8,11 @@
 
 #import "RBAppDelegate.h"
 
+#import "rosobjc.h"
+#import "ROSGenMsg.h"
+
+#import "RBServerSelectorViewController.h"
+
 @implementation RBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +21,16 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    UINavigationController *nc = [[UINavigationController alloc] init];
+    nc.navigationBar.barStyle = UIBarStyleBlack;
+    
+    NSArray *foo = @[[ROSMsgstd_msgsBool class], [ROSMsgstd_msgsDuration class], [ROSMsgstd_msgsFloat32 class], [ROSMsgstd_msgsFloat64 class], [ROSMsgstd_msgsInt16 class], [ROSMsgstd_msgsInt32 class], [ROSMsgstd_msgsInt64 class], [ROSMsgstd_msgsInt8 class], [ROSMsgstd_msgsString class], [ROSMsgstd_msgsTime class], [ROSMsgstd_msgsUInt16 class], [ROSMsgstd_msgsUInt32 class], [ROSMsgstd_msgsUInt64 class], [ROSMsgstd_msgsUInt8 class]];
+    
+    [[ROSCore sharedCore] registerMessageClasses:foo];
+    
+    RBServerSelectorViewController *vc = [[RBServerSelectorViewController alloc] init];
+    [nc pushViewController:vc animated:NO];
+    self.window.rootViewController = nc;
     return YES;
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89A22E0A17C06C5300A90D38 /* RBTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A22E0917C06C5300A90D38 /* RBTopicViewController.m */; };
+		89A22E1717C1577F00A90D38 /* ROSGenMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A22E1617C1577F00A90D38 /* ROSGenMsg.m */; };
 		89A5511117BEC7CC00447C87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A5511017BEC7CC00447C87 /* UIKit.framework */; };
 		89A5511317BEC7CC00447C87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A5511217BEC7CC00447C87 /* Foundation.framework */; };
 		89A5511517BEC7CC00447C87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A5511417BEC7CC00447C87 /* CoreGraphics.framework */; };
@@ -16,9 +18,152 @@
 		89A5512317BEC7CD00447C87 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A5512217BEC7CD00447C87 /* Default.png */; };
 		89A5512517BEC7CD00447C87 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A5512417BEC7CD00447C87 /* Default@2x.png */; };
 		89A5512717BEC7CD00447C87 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A5512617BEC7CD00447C87 /* Default-568h@2x.png */; };
+		89A552D817BEC7F800447C87 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 89A5512F17BEC7F600447C87 /* .gitignore */; };
+		89A552D917BEC7F800447C87 /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = 89A5513017BEC7F600447C87 /* .hgignore */; };
+		89A552DA17BEC7F800447C87 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5513417BEC7F600447C87 /* DDData.m */; };
+		89A552DB17BEC7F800447C87 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5513617BEC7F600447C87 /* DDNumber.m */; };
+		89A552DC17BEC7F800447C87 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5513817BEC7F600447C87 /* DDRange.m */; };
+		89A552DD17BEC7F800447C87 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5513A17BEC7F600447C87 /* HTTPAuthenticationRequest.m */; };
+		89A552DE17BEC7F800447C87 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5513C17BEC7F600447C87 /* HTTPConnection.m */; };
+		89A552DF17BEC7F800447C87 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5513F17BEC7F600447C87 /* HTTPMessage.m */; };
+		89A552E017BEC7F800447C87 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5514217BEC7F600447C87 /* HTTPServer.m */; };
+		89A552E117BEC7F800447C87 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5514517BEC7F600447C87 /* MultipartFormDataParser.m */; };
+		89A552E217BEC7F800447C87 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5514717BEC7F600447C87 /* MultipartMessageHeader.m */; };
+		89A552E317BEC7F800447C87 /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5514917BEC7F600447C87 /* MultipartMessageHeaderField.m */; };
+		89A552E417BEC7F800447C87 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5514C17BEC7F600447C87 /* HTTPAsyncFileResponse.m */; };
+		89A552E517BEC7F800447C87 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5514E17BEC7F600447C87 /* HTTPDataResponse.m */; };
+		89A552E617BEC7F800447C87 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5515017BEC7F600447C87 /* HTTPDynamicFileResponse.m */; };
+		89A552E717BEC7F800447C87 /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5515217BEC7F600447C87 /* HTTPErrorResponse.m */; };
+		89A552E817BEC7F800447C87 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5515417BEC7F600447C87 /* HTTPFileResponse.m */; };
+		89A552E917BEC7F800447C87 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5515617BEC7F600447C87 /* HTTPRedirectResponse.m */; };
+		89A552EA17BEC7F800447C87 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5515817BEC7F600447C87 /* WebSocket.m */; };
+		89A552EF17BEC7F800447C87 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89A5516317BEC7F600447C87 /* LICENSE.txt */; };
+		89A552F017BEC7F800447C87 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 89A5516417BEC7F600447C87 /* README.markdown */; };
+		89A5534C17BEC7F800447C87 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89A5522917BEC7F700447C87 /* About.txt */; };
+		89A5534D17BEC7F800447C87 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5522B17BEC7F700447C87 /* GCDAsyncSocket.m */; };
+		89A5534E17BEC7F800447C87 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89A5522D17BEC7F800447C87 /* About.txt */; };
+		89A5534F17BEC7F800447C87 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5522F17BEC7F800447C87 /* DDAbstractDatabaseLogger.m */; };
+		89A5535017BEC7F800447C87 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5523117BEC7F800447C87 /* DDASLLogger.m */; };
+		89A5535117BEC7F800447C87 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5523317BEC7F800447C87 /* DDFileLogger.m */; };
+		89A5535217BEC7F800447C87 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5523517BEC7F800447C87 /* DDLog.m */; };
+		89A5535317BEC7F800447C87 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5523717BEC7F800447C87 /* DDTTYLogger.m */; };
+		89A5535417BEC7F800447C87 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5523A17BEC7F800447C87 /* ContextFilterLogFormatter.m */; };
+		89A5535517BEC7F800447C87 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5523C17BEC7F800447C87 /* DispatchQueueLogFormatter.m */; };
+		89A5535617BEC7F800447C87 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89A5523D17BEC7F800447C87 /* README.txt */; };
+		89A5535717BEC7F800447C87 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89A5523E17BEC7F800447C87 /* README.md */; };
+		89A5535817BEC7F800447C87 /* ROSCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5524117BEC7F800447C87 /* ROSCore.m */; };
+		89A5535917BEC7F800447C87 /* ROSMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5524317BEC7F800447C87 /* ROSMsg.m */; };
+		89A5535A17BEC7F800447C87 /* ROSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5524517BEC7F800447C87 /* ROSNode.m */; };
+		89A5535C17BEC7F800447C87 /* ROSSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5524B17BEC7F800447C87 /* ROSSocket.m */; };
+		89A5535D17BEC7F800447C87 /* ROSUDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5524D17BEC7F800447C87 /* ROSUDP.m */; };
+		89A5535E17BEC7F800447C87 /* ROSXMLRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5524F17BEC7F800447C87 /* ROSXMLRPC.m */; };
+		89A5535F17BEC7F800447C87 /* RPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5525117BEC7F800447C87 /* RPCConnection.m */; };
+		89A5536017BEC7F800447C87 /* RPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5525317BEC7F800447C87 /* RPCResponse.m */; };
+		89A5536117BEC7F800447C87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89A5525617BEC7F800447C87 /* InfoPlist.strings */; };
+		89A5536217BEC7F800447C87 /* rosobjc-osxTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89A5525817BEC7F800447C87 /* rosobjc-osxTests-Info.plist */; };
+		89A5536317BEC7F800447C87 /* rosobjc_osxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5525917BEC7F800447C87 /* rosobjc_osxTests.m */; };
+		89A5536417BEC7F800447C87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89A5525E17BEC7F800447C87 /* InfoPlist.strings */; };
+		89A5536517BEC7F800447C87 /* rosobjcTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526017BEC7F800447C87 /* rosobjcTests-Info.plist */; };
+		89A5536617BEC7F800447C87 /* rosobjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5526117BEC7F800447C87 /* rosobjcTests.m */; };
+		89A5536717BEC7F800447C87 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526217BEC7F800447C87 /* TODO */; };
+		89A5536817BEC7F800447C87 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526417BEC7F800447C87 /* .gitignore */; };
+		89A5536917BEC7F800447C87 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526617BEC7F800447C87 /* Common.xcconfig */; };
+		89A5536A17BEC7F800447C87 /* CommonDevelopment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526717BEC7F800447C87 /* CommonDevelopment.xcconfig */; };
+		89A5536B17BEC7F800447C87 /* CommonRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526817BEC7F800447C87 /* CommonRelease.xcconfig */; };
+		89A5536C17BEC7F800447C87 /* XMLRPC.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526917BEC7F800447C87 /* XMLRPC.xcconfig */; };
+		89A5536D17BEC7F800447C87 /* XMLRPCDevelopment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526A17BEC7F800447C87 /* XMLRPCDevelopment.xcconfig */; };
+		89A5536E17BEC7F800447C87 /* XMLRPCRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526B17BEC7F800447C87 /* XMLRPCRelease.xcconfig */; };
+		89A5536F17BEC7F800447C87 /* XMLRPCUnitTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526C17BEC7F800447C87 /* XMLRPCUnitTests.xcconfig */; };
+		89A5537017BEC7F800447C87 /* XMLRPCUnitTestsDevelopment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526D17BEC7F800447C87 /* XMLRPCUnitTestsDevelopment.xcconfig */; };
+		89A5537117BEC7F800447C87 /* XMLRPCUnitTestsRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89A5526E17BEC7F800447C87 /* XMLRPCUnitTestsRelease.xcconfig */; };
+		89A5537217BEC7F800447C87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527017BEC7F800447C87 /* InfoPlist.strings */; };
+		89A5537317BEC7F800447C87 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527217BEC7F800447C87 /* LICENSE.md */; };
+		89A5537417BEC7F800447C87 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5527417BEC7F800447C87 /* NSData+Base64.m */; };
+		89A5537517BEC7F800447C87 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A5527617BEC7F800447C87 /* NSStringAdditions.m */; };
+		89A5537617BEC7F800447C87 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527717BEC7F800447C87 /* README.md */; };
+		89A5537717BEC7F800447C87 /* TestCases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527A17BEC7F800447C87 /* TestCases.plist */; };
+		89A5537817BEC7F800447C87 /* XMLRPC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527B17BEC7F800447C87 /* XMLRPC-Info.plist */; };
+		89A5537917BEC7F800447C87 /* XMLRPCUnitTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527C17BEC7F800447C87 /* XMLRPCUnitTests-Info.plist */; };
+		89A5537A17BEC7F800447C87 /* AlternativeDateFormatsTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527E17BEC7F800447C87 /* AlternativeDateFormatsTestCase.xml */; };
+		89A5537B17BEC7F800447C87 /* DefaultTypeTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5527F17BEC7F800447C87 /* DefaultTypeTestCase.xml */; };
+		89A5537C17BEC7F800447C87 /* EmptyBooleanTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5528017BEC7F800447C87 /* EmptyBooleanTestCase.xml */; };
+		89A5537D17BEC7F800447C87 /* EmptyDataTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5528117BEC7F800447C87 /* EmptyDataTestCase.xml */; };
+		89A5537E17BEC7F800447C87 /* EmptyDoubleTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5528217BEC7F800447C87 /* EmptyDoubleTestCase.xml */; };
+		89A5537F17BEC7F800447C87 /* EmptyIntegerTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5528317BEC7F800447C87 /* EmptyIntegerTestCase.xml */; };
+		89A5538017BEC7F800447C87 /* EmptyStringTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5528417BEC7F800447C87 /* EmptyStringTestCase.xml */; };
+		89A5538117BEC7F800447C87 /* SimpleArrayTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5528517BEC7F800447C87 /* SimpleArrayTestCase.xml */; };
+		89A5538217BEC7F800447C87 /* SimpleStructTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89A5528617BEC7F800447C87 /* SimpleStructTestCase.xml */; };
+		89A553A317BEC7F800447C87 /* XMLRPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A552C917BEC7F800447C87 /* XMLRPCConnection.m */; };
+		89A553A417BEC7F800447C87 /* XMLRPCConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A552CC17BEC7F800447C87 /* XMLRPCConnectionManager.m */; };
+		89A553A517BEC7F800447C87 /* XMLRPCDefaultEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A552CE17BEC7F800447C87 /* XMLRPCDefaultEncoder.m */; };
+		89A553A617BEC7F800447C87 /* XMLRPCEventBasedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A552D117BEC7F800447C87 /* XMLRPCEventBasedParser.m */; };
+		89A553A717BEC7F800447C87 /* XMLRPCEventBasedParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A552D317BEC7F800447C87 /* XMLRPCEventBasedParserDelegate.m */; };
+		89A553A817BEC7F800447C87 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A552D517BEC7F800447C87 /* XMLRPCRequest.m */; };
+		89A553A917BEC7F800447C87 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A552D717BEC7F800447C87 /* XMLRPCResponse.m */; };
+		89A553E217BEC99000447C87 /* RBServerSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A553E117BEC99000447C87 /* RBServerSelectorViewController.m */; };
+		89A553E517BECDF400447C87 /* RBMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A553E417BECDF400447C87 /* RBMainMenuViewController.m */; };
+		89A553E717BF02F400447C87 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A553E617BF02F400447C87 /* CoreFoundation.framework */; };
+		89A553E917BF02FA00447C87 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A553E817BF02FA00447C87 /* CFNetwork.framework */; };
+		89A553EB17BF032C00447C87 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A553EA17BF032C00447C87 /* Security.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		89A553BA17BEC7FA00447C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A5525A17BEC7F800447C87 /* rosobjc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 891F1C731770245400E4C321;
+			remoteInfo = rosobjc;
+		};
+		89A553BC17BEC7FA00447C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A5525A17BEC7F800447C87 /* rosobjc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 891F1C831770245400E4C321;
+			remoteInfo = rosobjcTests;
+		};
+		89A553BE17BEC7FA00447C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A5525A17BEC7F800447C87 /* rosobjc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 891F1CA11770255500E4C321;
+			remoteInfo = "rosobjc-osx";
+		};
+		89A553C017BEC7FA00447C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A5525A17BEC7F800447C87 /* rosobjc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 891F1CB61770255500E4C321;
+			remoteInfo = "rosobjc-osxTests";
+		};
+		89A553DA17BEC7FA00447C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A552C517BEC7F800447C87 /* XMLRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = XMLRPC;
+		};
+		89A553DC17BEC7FA00447C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A552C517BEC7F800447C87 /* XMLRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 903B0DB612F7574800BD6E09;
+			remoteInfo = libXMLRPC;
+		};
+		89A553DE17BEC7FA00447C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A552C517BEC7F800447C87 /* XMLRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0799AF030F6721FF00B71B22;
+			remoteInfo = XMLRPCUnitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		89A22E0817C06C5300A90D38 /* RBTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTopicViewController.h; sourceTree = "<group>"; };
+		89A22E0917C06C5300A90D38 /* RBTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTopicViewController.m; sourceTree = "<group>"; };
+		89A22E1517C1577F00A90D38 /* ROSGenMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROSGenMsg.h; path = ../scripts/ROSGenMsg.h; sourceTree = "<group>"; };
+		89A22E1617C1577F00A90D38 /* ROSGenMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROSGenMsg.m; path = ../scripts/ROSGenMsg.m; sourceTree = "<group>"; };
 		89A5510D17BEC7CC00447C87 /* ROSViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROSViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A5511017BEC7CC00447C87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		89A5511217BEC7CC00447C87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +177,148 @@
 		89A5512217BEC7CD00447C87 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		89A5512417BEC7CD00447C87 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		89A5512617BEC7CD00447C87 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		89A5512F17BEC7F600447C87 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		89A5513017BEC7F600447C87 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
+		89A5513317BEC7F600447C87 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		89A5513417BEC7F600447C87 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		89A5513517BEC7F600447C87 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		89A5513617BEC7F600447C87 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		89A5513717BEC7F600447C87 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		89A5513817BEC7F600447C87 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		89A5513917BEC7F600447C87 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		89A5513A17BEC7F600447C87 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		89A5513B17BEC7F600447C87 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		89A5513C17BEC7F600447C87 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		89A5513D17BEC7F600447C87 /* HTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPLogging.h; sourceTree = "<group>"; };
+		89A5513E17BEC7F600447C87 /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		89A5513F17BEC7F600447C87 /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		89A5514017BEC7F600447C87 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		89A5514117BEC7F600447C87 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		89A5514217BEC7F600447C87 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		89A5514417BEC7F600447C87 /* MultipartFormDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartFormDataParser.h; sourceTree = "<group>"; };
+		89A5514517BEC7F600447C87 /* MultipartFormDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartFormDataParser.m; sourceTree = "<group>"; };
+		89A5514617BEC7F600447C87 /* MultipartMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeader.h; sourceTree = "<group>"; };
+		89A5514717BEC7F600447C87 /* MultipartMessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeader.m; sourceTree = "<group>"; };
+		89A5514817BEC7F600447C87 /* MultipartMessageHeaderField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeaderField.h; sourceTree = "<group>"; };
+		89A5514917BEC7F600447C87 /* MultipartMessageHeaderField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeaderField.m; sourceTree = "<group>"; };
+		89A5514B17BEC7F600447C87 /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		89A5514C17BEC7F600447C87 /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		89A5514D17BEC7F600447C87 /* HTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDataResponse.h; sourceTree = "<group>"; };
+		89A5514E17BEC7F600447C87 /* HTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDataResponse.m; sourceTree = "<group>"; };
+		89A5514F17BEC7F600447C87 /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		89A5515017BEC7F600447C87 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		89A5515117BEC7F600447C87 /* HTTPErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPErrorResponse.h; sourceTree = "<group>"; };
+		89A5515217BEC7F600447C87 /* HTTPErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPErrorResponse.m; sourceTree = "<group>"; };
+		89A5515317BEC7F600447C87 /* HTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileResponse.h; sourceTree = "<group>"; };
+		89A5515417BEC7F600447C87 /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
+		89A5515517BEC7F600447C87 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		89A5515617BEC7F600447C87 /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		89A5515717BEC7F600447C87 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		89A5515817BEC7F600447C87 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+		89A5516317BEC7F600447C87 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		89A5516417BEC7F600447C87 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		89A5522917BEC7F700447C87 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		89A5522A17BEC7F700447C87 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		89A5522B17BEC7F700447C87 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		89A5522D17BEC7F800447C87 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		89A5522E17BEC7F800447C87 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		89A5522F17BEC7F800447C87 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		89A5523017BEC7F800447C87 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		89A5523117BEC7F800447C87 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		89A5523217BEC7F800447C87 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		89A5523317BEC7F800447C87 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		89A5523417BEC7F800447C87 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		89A5523517BEC7F800447C87 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		89A5523617BEC7F800447C87 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		89A5523717BEC7F800447C87 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		89A5523917BEC7F800447C87 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		89A5523A17BEC7F800447C87 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		89A5523B17BEC7F800447C87 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		89A5523C17BEC7F800447C87 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		89A5523D17BEC7F800447C87 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		89A5523E17BEC7F800447C87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		89A5524017BEC7F800447C87 /* ROSCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSCore.h; sourceTree = "<group>"; };
+		89A5524117BEC7F800447C87 /* ROSCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSCore.m; sourceTree = "<group>"; };
+		89A5524217BEC7F800447C87 /* ROSMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSMsg.h; sourceTree = "<group>"; };
+		89A5524317BEC7F800447C87 /* ROSMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSMsg.m; sourceTree = "<group>"; };
+		89A5524417BEC7F800447C87 /* ROSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSNode.h; sourceTree = "<group>"; };
+		89A5524517BEC7F800447C87 /* ROSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSNode.m; sourceTree = "<group>"; };
+		89A5524617BEC7F800447C87 /* ROSNodeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSNodeDelegate.h; sourceTree = "<group>"; };
+		89A5524717BEC7F800447C87 /* rosobjc-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rosobjc-Prefix.pch"; sourceTree = "<group>"; };
+		89A5524817BEC7F800447C87 /* rosobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rosobjc.h; sourceTree = "<group>"; };
+		89A5524A17BEC7F800447C87 /* ROSSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSSocket.h; sourceTree = "<group>"; };
+		89A5524B17BEC7F800447C87 /* ROSSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSSocket.m; sourceTree = "<group>"; };
+		89A5524C17BEC7F800447C87 /* ROSUDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSUDP.h; sourceTree = "<group>"; };
+		89A5524D17BEC7F800447C87 /* ROSUDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSUDP.m; sourceTree = "<group>"; };
+		89A5524E17BEC7F800447C87 /* ROSXMLRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSXMLRPC.h; sourceTree = "<group>"; };
+		89A5524F17BEC7F800447C87 /* ROSXMLRPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSXMLRPC.m; sourceTree = "<group>"; };
+		89A5525017BEC7F800447C87 /* RPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCConnection.h; sourceTree = "<group>"; };
+		89A5525117BEC7F800447C87 /* RPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCConnection.m; sourceTree = "<group>"; };
+		89A5525217BEC7F800447C87 /* RPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCResponse.h; sourceTree = "<group>"; };
+		89A5525317BEC7F800447C87 /* RPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCResponse.m; sourceTree = "<group>"; };
+		89A5525717BEC7F800447C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89A5525817BEC7F800447C87 /* rosobjc-osxTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "rosobjc-osxTests-Info.plist"; sourceTree = "<group>"; };
+		89A5525917BEC7F800447C87 /* rosobjc_osxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rosobjc_osxTests.m; sourceTree = "<group>"; };
+		89A5525A17BEC7F800447C87 /* rosobjc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = rosobjc.xcodeproj; sourceTree = "<group>"; };
+		89A5525F17BEC7F800447C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89A5526017BEC7F800447C87 /* rosobjcTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "rosobjcTests-Info.plist"; sourceTree = "<group>"; };
+		89A5526117BEC7F800447C87 /* rosobjcTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rosobjcTests.m; sourceTree = "<group>"; };
+		89A5526217BEC7F800447C87 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		89A5526417BEC7F800447C87 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		89A5526617BEC7F800447C87 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		89A5526717BEC7F800447C87 /* CommonDevelopment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CommonDevelopment.xcconfig; sourceTree = "<group>"; };
+		89A5526817BEC7F800447C87 /* CommonRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CommonRelease.xcconfig; sourceTree = "<group>"; };
+		89A5526917BEC7F800447C87 /* XMLRPC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = XMLRPC.xcconfig; sourceTree = "<group>"; };
+		89A5526A17BEC7F800447C87 /* XMLRPCDevelopment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = XMLRPCDevelopment.xcconfig; sourceTree = "<group>"; };
+		89A5526B17BEC7F800447C87 /* XMLRPCRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = XMLRPCRelease.xcconfig; sourceTree = "<group>"; };
+		89A5526C17BEC7F800447C87 /* XMLRPCUnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = XMLRPCUnitTests.xcconfig; sourceTree = "<group>"; };
+		89A5526D17BEC7F800447C87 /* XMLRPCUnitTestsDevelopment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = XMLRPCUnitTestsDevelopment.xcconfig; sourceTree = "<group>"; };
+		89A5526E17BEC7F800447C87 /* XMLRPCUnitTestsRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = XMLRPCUnitTestsRelease.xcconfig; sourceTree = "<group>"; };
+		89A5527117BEC7F800447C87 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89A5527217BEC7F800447C87 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		89A5527317BEC7F800447C87 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		89A5527417BEC7F800447C87 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		89A5527517BEC7F800447C87 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		89A5527617BEC7F800447C87 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		89A5527717BEC7F800447C87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		89A5527A17BEC7F800447C87 /* TestCases.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestCases.plist; sourceTree = "<group>"; };
+		89A5527B17BEC7F800447C87 /* XMLRPC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLRPC-Info.plist"; sourceTree = "<group>"; };
+		89A5527C17BEC7F800447C87 /* XMLRPCUnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLRPCUnitTests-Info.plist"; sourceTree = "<group>"; };
+		89A5527E17BEC7F800447C87 /* AlternativeDateFormatsTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AlternativeDateFormatsTestCase.xml; sourceTree = "<group>"; };
+		89A5527F17BEC7F800447C87 /* DefaultTypeTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DefaultTypeTestCase.xml; sourceTree = "<group>"; };
+		89A5528017BEC7F800447C87 /* EmptyBooleanTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EmptyBooleanTestCase.xml; sourceTree = "<group>"; };
+		89A5528117BEC7F800447C87 /* EmptyDataTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EmptyDataTestCase.xml; sourceTree = "<group>"; };
+		89A5528217BEC7F800447C87 /* EmptyDoubleTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EmptyDoubleTestCase.xml; sourceTree = "<group>"; };
+		89A5528317BEC7F800447C87 /* EmptyIntegerTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EmptyIntegerTestCase.xml; sourceTree = "<group>"; };
+		89A5528417BEC7F800447C87 /* EmptyStringTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EmptyStringTestCase.xml; sourceTree = "<group>"; };
+		89A5528517BEC7F800447C87 /* SimpleArrayTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimpleArrayTestCase.xml; sourceTree = "<group>"; };
+		89A5528617BEC7F800447C87 /* SimpleStructTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimpleStructTestCase.xml; sourceTree = "<group>"; };
+		89A552C317BEC7F800447C87 /* XMLRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPC.h; sourceTree = "<group>"; };
+		89A552C417BEC7F800447C87 /* XMLRPC.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPC.pch; sourceTree = "<group>"; };
+		89A552C517BEC7F800447C87 /* XMLRPC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = XMLRPC.xcodeproj; sourceTree = "<group>"; };
+		89A552C817BEC7F800447C87 /* XMLRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCConnection.h; sourceTree = "<group>"; };
+		89A552C917BEC7F800447C87 /* XMLRPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCConnection.m; sourceTree = "<group>"; };
+		89A552CA17BEC7F800447C87 /* XMLRPCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCConnectionDelegate.h; sourceTree = "<group>"; };
+		89A552CB17BEC7F800447C87 /* XMLRPCConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCConnectionManager.h; sourceTree = "<group>"; };
+		89A552CC17BEC7F800447C87 /* XMLRPCConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCConnectionManager.m; sourceTree = "<group>"; };
+		89A552CD17BEC7F800447C87 /* XMLRPCDefaultEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCDefaultEncoder.h; sourceTree = "<group>"; };
+		89A552CE17BEC7F800447C87 /* XMLRPCDefaultEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCDefaultEncoder.m; sourceTree = "<group>"; };
+		89A552CF17BEC7F800447C87 /* XMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCEncoder.h; sourceTree = "<group>"; };
+		89A552D017BEC7F800447C87 /* XMLRPCEventBasedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCEventBasedParser.h; sourceTree = "<group>"; };
+		89A552D117BEC7F800447C87 /* XMLRPCEventBasedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCEventBasedParser.m; sourceTree = "<group>"; };
+		89A552D217BEC7F800447C87 /* XMLRPCEventBasedParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCEventBasedParserDelegate.h; sourceTree = "<group>"; };
+		89A552D317BEC7F800447C87 /* XMLRPCEventBasedParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCEventBasedParserDelegate.m; sourceTree = "<group>"; };
+		89A552D417BEC7F800447C87 /* XMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCRequest.h; sourceTree = "<group>"; };
+		89A552D517BEC7F800447C87 /* XMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCRequest.m; sourceTree = "<group>"; };
+		89A552D617BEC7F800447C87 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCResponse.h; sourceTree = "<group>"; };
+		89A552D717BEC7F800447C87 /* XMLRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCResponse.m; sourceTree = "<group>"; };
+		89A553E017BEC99000447C87 /* RBServerSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBServerSelectorViewController.h; sourceTree = "<group>"; };
+		89A553E117BEC99000447C87 /* RBServerSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBServerSelectorViewController.m; sourceTree = "<group>"; };
+		89A553E317BECDF400447C87 /* RBMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBMainMenuViewController.h; sourceTree = "<group>"; };
+		89A553E417BECDF400447C87 /* RBMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMainMenuViewController.m; sourceTree = "<group>"; };
+		89A553E617BF02F400447C87 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		89A553E817BF02FA00447C87 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		89A553EA17BF032C00447C87 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +326,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A553EB17BF032C00447C87 /* Security.framework in Frameworks */,
+				89A553E917BF02FA00447C87 /* CFNetwork.framework in Frameworks */,
+				89A553E717BF02F400447C87 /* CoreFoundation.framework in Frameworks */,
 				89A5511117BEC7CC00447C87 /* UIKit.framework in Frameworks */,
 				89A5511317BEC7CC00447C87 /* Foundation.framework in Frameworks */,
 				89A5511517BEC7CC00447C87 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +341,10 @@
 		89A5510417BEC7CC00447C87 = {
 			isa = PBXGroup;
 			children = (
+				89A553EA17BF032C00447C87 /* Security.framework */,
+				89A553E817BF02FA00447C87 /* CFNetwork.framework */,
+				89A553E617BF02F400447C87 /* CoreFoundation.framework */,
+				89A5512D17BEC7F600447C87 /* rosobjc */,
 				89A5511617BEC7CD00447C87 /* ROSViewer */,
 				89A5510F17BEC7CC00447C87 /* Frameworks */,
 				89A5510E17BEC7CC00447C87 /* Products */,
@@ -80,6 +374,12 @@
 			children = (
 				89A5511F17BEC7CD00447C87 /* RBAppDelegate.h */,
 				89A5512017BEC7CD00447C87 /* RBAppDelegate.m */,
+				89A553E017BEC99000447C87 /* RBServerSelectorViewController.h */,
+				89A553E117BEC99000447C87 /* RBServerSelectorViewController.m */,
+				89A553E317BECDF400447C87 /* RBMainMenuViewController.h */,
+				89A553E417BECDF400447C87 /* RBMainMenuViewController.m */,
+				89A22E0817C06C5300A90D38 /* RBTopicViewController.h */,
+				89A22E0917C06C5300A90D38 /* RBTopicViewController.m */,
 				89A5511717BEC7CD00447C87 /* Supporting Files */,
 			);
 			path = ROSViewer;
@@ -97,6 +397,324 @@
 				89A5512617BEC7CD00447C87 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89A5512D17BEC7F600447C87 /* rosobjc */ = {
+			isa = PBXGroup;
+			children = (
+				89A5512E17BEC7F600447C87 /* CocoaHTTPServer */,
+				89A5523E17BEC7F800447C87 /* README.md */,
+				89A5523F17BEC7F800447C87 /* rosobjc */,
+				89A5525417BEC7F800447C87 /* rosobjc-osx */,
+				89A5525517BEC7F800447C87 /* rosobjc-osxTests */,
+				89A5525A17BEC7F800447C87 /* rosobjc.xcodeproj */,
+				89A5525D17BEC7F800447C87 /* rosobjcTests */,
+				89A5526217BEC7F800447C87 /* TODO */,
+				89A5526317BEC7F800447C87 /* xmlrpc */,
+			);
+			name = rosobjc;
+			path = ../rosobjc;
+			sourceTree = "<group>";
+		};
+		89A5512E17BEC7F600447C87 /* CocoaHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				89A5512F17BEC7F600447C87 /* .gitignore */,
+				89A5513017BEC7F600447C87 /* .hgignore */,
+				89A5513117BEC7F600447C87 /* Core */,
+				89A5516317BEC7F600447C87 /* LICENSE.txt */,
+				89A5516417BEC7F600447C87 /* README.markdown */,
+				89A5522717BEC7F700447C87 /* Vendor */,
+			);
+			path = CocoaHTTPServer;
+			sourceTree = "<group>";
+		};
+		89A5513117BEC7F600447C87 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				89A5513217BEC7F600447C87 /* Categories */,
+				89A5513917BEC7F600447C87 /* HTTPAuthenticationRequest.h */,
+				89A5513A17BEC7F600447C87 /* HTTPAuthenticationRequest.m */,
+				89A5513B17BEC7F600447C87 /* HTTPConnection.h */,
+				89A5513C17BEC7F600447C87 /* HTTPConnection.m */,
+				89A5513D17BEC7F600447C87 /* HTTPLogging.h */,
+				89A5513E17BEC7F600447C87 /* HTTPMessage.h */,
+				89A5513F17BEC7F600447C87 /* HTTPMessage.m */,
+				89A5514017BEC7F600447C87 /* HTTPResponse.h */,
+				89A5514117BEC7F600447C87 /* HTTPServer.h */,
+				89A5514217BEC7F600447C87 /* HTTPServer.m */,
+				89A5514317BEC7F600447C87 /* Mime */,
+				89A5514A17BEC7F600447C87 /* Responses */,
+				89A5515717BEC7F600447C87 /* WebSocket.h */,
+				89A5515817BEC7F600447C87 /* WebSocket.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		89A5513217BEC7F600447C87 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				89A5513317BEC7F600447C87 /* DDData.h */,
+				89A5513417BEC7F600447C87 /* DDData.m */,
+				89A5513517BEC7F600447C87 /* DDNumber.h */,
+				89A5513617BEC7F600447C87 /* DDNumber.m */,
+				89A5513717BEC7F600447C87 /* DDRange.h */,
+				89A5513817BEC7F600447C87 /* DDRange.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		89A5514317BEC7F600447C87 /* Mime */ = {
+			isa = PBXGroup;
+			children = (
+				89A5514417BEC7F600447C87 /* MultipartFormDataParser.h */,
+				89A5514517BEC7F600447C87 /* MultipartFormDataParser.m */,
+				89A5514617BEC7F600447C87 /* MultipartMessageHeader.h */,
+				89A5514717BEC7F600447C87 /* MultipartMessageHeader.m */,
+				89A5514817BEC7F600447C87 /* MultipartMessageHeaderField.h */,
+				89A5514917BEC7F600447C87 /* MultipartMessageHeaderField.m */,
+			);
+			path = Mime;
+			sourceTree = "<group>";
+		};
+		89A5514A17BEC7F600447C87 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				89A5514B17BEC7F600447C87 /* HTTPAsyncFileResponse.h */,
+				89A5514C17BEC7F600447C87 /* HTTPAsyncFileResponse.m */,
+				89A5514D17BEC7F600447C87 /* HTTPDataResponse.h */,
+				89A5514E17BEC7F600447C87 /* HTTPDataResponse.m */,
+				89A5514F17BEC7F600447C87 /* HTTPDynamicFileResponse.h */,
+				89A5515017BEC7F600447C87 /* HTTPDynamicFileResponse.m */,
+				89A5515117BEC7F600447C87 /* HTTPErrorResponse.h */,
+				89A5515217BEC7F600447C87 /* HTTPErrorResponse.m */,
+				89A5515317BEC7F600447C87 /* HTTPFileResponse.h */,
+				89A5515417BEC7F600447C87 /* HTTPFileResponse.m */,
+				89A5515517BEC7F600447C87 /* HTTPRedirectResponse.h */,
+				89A5515617BEC7F600447C87 /* HTTPRedirectResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		89A5522717BEC7F700447C87 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				89A5522817BEC7F700447C87 /* CocoaAsyncSocket */,
+				89A5522C17BEC7F800447C87 /* CocoaLumberjack */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		89A5522817BEC7F700447C87 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				89A5522917BEC7F700447C87 /* About.txt */,
+				89A5522A17BEC7F700447C87 /* GCDAsyncSocket.h */,
+				89A5522B17BEC7F700447C87 /* GCDAsyncSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		89A5522C17BEC7F800447C87 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				89A5522D17BEC7F800447C87 /* About.txt */,
+				89A5522E17BEC7F800447C87 /* DDAbstractDatabaseLogger.h */,
+				89A5522F17BEC7F800447C87 /* DDAbstractDatabaseLogger.m */,
+				89A5523017BEC7F800447C87 /* DDASLLogger.h */,
+				89A5523117BEC7F800447C87 /* DDASLLogger.m */,
+				89A5523217BEC7F800447C87 /* DDFileLogger.h */,
+				89A5523317BEC7F800447C87 /* DDFileLogger.m */,
+				89A5523417BEC7F800447C87 /* DDLog.h */,
+				89A5523517BEC7F800447C87 /* DDLog.m */,
+				89A5523617BEC7F800447C87 /* DDTTYLogger.h */,
+				89A5523717BEC7F800447C87 /* DDTTYLogger.m */,
+				89A5523817BEC7F800447C87 /* Extensions */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		89A5523817BEC7F800447C87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				89A5523917BEC7F800447C87 /* ContextFilterLogFormatter.h */,
+				89A5523A17BEC7F800447C87 /* ContextFilterLogFormatter.m */,
+				89A5523B17BEC7F800447C87 /* DispatchQueueLogFormatter.h */,
+				89A5523C17BEC7F800447C87 /* DispatchQueueLogFormatter.m */,
+				89A5523D17BEC7F800447C87 /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89A5523F17BEC7F800447C87 /* rosobjc */ = {
+			isa = PBXGroup;
+			children = (
+				89A5524017BEC7F800447C87 /* ROSCore.h */,
+				89A5524117BEC7F800447C87 /* ROSCore.m */,
+				89A5524217BEC7F800447C87 /* ROSMsg.h */,
+				89A5524317BEC7F800447C87 /* ROSMsg.m */,
+				89A22E1517C1577F00A90D38 /* ROSGenMsg.h */,
+				89A22E1617C1577F00A90D38 /* ROSGenMsg.m */,
+				89A5524417BEC7F800447C87 /* ROSNode.h */,
+				89A5524517BEC7F800447C87 /* ROSNode.m */,
+				89A5524617BEC7F800447C87 /* ROSNodeDelegate.h */,
+				89A5524717BEC7F800447C87 /* rosobjc-Prefix.pch */,
+				89A5524817BEC7F800447C87 /* rosobjc.h */,
+				89A5524A17BEC7F800447C87 /* ROSSocket.h */,
+				89A5524B17BEC7F800447C87 /* ROSSocket.m */,
+				89A5524C17BEC7F800447C87 /* ROSUDP.h */,
+				89A5524D17BEC7F800447C87 /* ROSUDP.m */,
+				89A5524E17BEC7F800447C87 /* ROSXMLRPC.h */,
+				89A5524F17BEC7F800447C87 /* ROSXMLRPC.m */,
+				89A5525017BEC7F800447C87 /* RPCConnection.h */,
+				89A5525117BEC7F800447C87 /* RPCConnection.m */,
+				89A5525217BEC7F800447C87 /* RPCResponse.h */,
+				89A5525317BEC7F800447C87 /* RPCResponse.m */,
+			);
+			path = rosobjc;
+			sourceTree = "<group>";
+		};
+		89A5525417BEC7F800447C87 /* rosobjc-osx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "rosobjc-osx";
+			sourceTree = "<group>";
+		};
+		89A5525517BEC7F800447C87 /* rosobjc-osxTests */ = {
+			isa = PBXGroup;
+			children = (
+				89A5525617BEC7F800447C87 /* InfoPlist.strings */,
+				89A5525817BEC7F800447C87 /* rosobjc-osxTests-Info.plist */,
+				89A5525917BEC7F800447C87 /* rosobjc_osxTests.m */,
+			);
+			path = "rosobjc-osxTests";
+			sourceTree = "<group>";
+		};
+		89A5525B17BEC7F800447C87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89A553BB17BEC7FA00447C87 /* librosobjc.a */,
+				89A553BD17BEC7FA00447C87 /* rosobjcTests.xctest */,
+				89A553BF17BEC7FA00447C87 /* rosobjc-osx.framework */,
+				89A553C117BEC7FA00447C87 /* rosobjc-osxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89A5525D17BEC7F800447C87 /* rosobjcTests */ = {
+			isa = PBXGroup;
+			children = (
+				89A5525E17BEC7F800447C87 /* InfoPlist.strings */,
+				89A5526017BEC7F800447C87 /* rosobjcTests-Info.plist */,
+				89A5526117BEC7F800447C87 /* rosobjcTests.m */,
+			);
+			path = rosobjcTests;
+			sourceTree = "<group>";
+		};
+		89A5526317BEC7F800447C87 /* xmlrpc */ = {
+			isa = PBXGroup;
+			children = (
+				89A5526417BEC7F800447C87 /* .gitignore */,
+				89A5526517BEC7F800447C87 /* Configurations */,
+				89A5526F17BEC7F800447C87 /* Languages */,
+				89A5527217BEC7F800447C87 /* LICENSE.md */,
+				89A5527317BEC7F800447C87 /* NSData+Base64.h */,
+				89A5527417BEC7F800447C87 /* NSData+Base64.m */,
+				89A5527517BEC7F800447C87 /* NSStringAdditions.h */,
+				89A5527617BEC7F800447C87 /* NSStringAdditions.m */,
+				89A5527717BEC7F800447C87 /* README.md */,
+				89A5527817BEC7F800447C87 /* Resources */,
+				89A552C317BEC7F800447C87 /* XMLRPC.h */,
+				89A552C417BEC7F800447C87 /* XMLRPC.pch */,
+				89A552C517BEC7F800447C87 /* XMLRPC.xcodeproj */,
+				89A552C817BEC7F800447C87 /* XMLRPCConnection.h */,
+				89A552C917BEC7F800447C87 /* XMLRPCConnection.m */,
+				89A552CA17BEC7F800447C87 /* XMLRPCConnectionDelegate.h */,
+				89A552CB17BEC7F800447C87 /* XMLRPCConnectionManager.h */,
+				89A552CC17BEC7F800447C87 /* XMLRPCConnectionManager.m */,
+				89A552CD17BEC7F800447C87 /* XMLRPCDefaultEncoder.h */,
+				89A552CE17BEC7F800447C87 /* XMLRPCDefaultEncoder.m */,
+				89A552CF17BEC7F800447C87 /* XMLRPCEncoder.h */,
+				89A552D017BEC7F800447C87 /* XMLRPCEventBasedParser.h */,
+				89A552D117BEC7F800447C87 /* XMLRPCEventBasedParser.m */,
+				89A552D217BEC7F800447C87 /* XMLRPCEventBasedParserDelegate.h */,
+				89A552D317BEC7F800447C87 /* XMLRPCEventBasedParserDelegate.m */,
+				89A552D417BEC7F800447C87 /* XMLRPCRequest.h */,
+				89A552D517BEC7F800447C87 /* XMLRPCRequest.m */,
+				89A552D617BEC7F800447C87 /* XMLRPCResponse.h */,
+				89A552D717BEC7F800447C87 /* XMLRPCResponse.m */,
+			);
+			path = xmlrpc;
+			sourceTree = "<group>";
+		};
+		89A5526517BEC7F800447C87 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				89A5526617BEC7F800447C87 /* Common.xcconfig */,
+				89A5526717BEC7F800447C87 /* CommonDevelopment.xcconfig */,
+				89A5526817BEC7F800447C87 /* CommonRelease.xcconfig */,
+				89A5526917BEC7F800447C87 /* XMLRPC.xcconfig */,
+				89A5526A17BEC7F800447C87 /* XMLRPCDevelopment.xcconfig */,
+				89A5526B17BEC7F800447C87 /* XMLRPCRelease.xcconfig */,
+				89A5526C17BEC7F800447C87 /* XMLRPCUnitTests.xcconfig */,
+				89A5526D17BEC7F800447C87 /* XMLRPCUnitTestsDevelopment.xcconfig */,
+				89A5526E17BEC7F800447C87 /* XMLRPCUnitTestsRelease.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		89A5526F17BEC7F800447C87 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				89A5527017BEC7F800447C87 /* InfoPlist.strings */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
+		89A5527817BEC7F800447C87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89A5527917BEC7F800447C87 /* Property Lists */,
+				89A5527D17BEC7F800447C87 /* Test Cases */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89A5527917BEC7F800447C87 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				89A5527A17BEC7F800447C87 /* TestCases.plist */,
+				89A5527B17BEC7F800447C87 /* XMLRPC-Info.plist */,
+				89A5527C17BEC7F800447C87 /* XMLRPCUnitTests-Info.plist */,
+			);
+			path = "Property Lists";
+			sourceTree = "<group>";
+		};
+		89A5527D17BEC7F800447C87 /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				89A5527E17BEC7F800447C87 /* AlternativeDateFormatsTestCase.xml */,
+				89A5527F17BEC7F800447C87 /* DefaultTypeTestCase.xml */,
+				89A5528017BEC7F800447C87 /* EmptyBooleanTestCase.xml */,
+				89A5528117BEC7F800447C87 /* EmptyDataTestCase.xml */,
+				89A5528217BEC7F800447C87 /* EmptyDoubleTestCase.xml */,
+				89A5528317BEC7F800447C87 /* EmptyIntegerTestCase.xml */,
+				89A5528417BEC7F800447C87 /* EmptyStringTestCase.xml */,
+				89A5528517BEC7F800447C87 /* SimpleArrayTestCase.xml */,
+				89A5528617BEC7F800447C87 /* SimpleStructTestCase.xml */,
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		89A552C617BEC7F800447C87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89A553DB17BEC7FA00447C87 /* XMLRPC.framework */,
+				89A553DD17BEC7FA00447C87 /* libXMLRPC.a */,
+				89A553DF17BEC7FA00447C87 /* XMLRPCUnitTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,16 +753,79 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 89A5510417BEC7CC00447C87;
 			productRefGroup = 89A5510E17BEC7CC00447C87 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 89A5525B17BEC7F800447C87 /* Products */;
+					ProjectRef = 89A5525A17BEC7F800447C87 /* rosobjc.xcodeproj */;
+				},
+				{
+					ProductGroup = 89A552C617BEC7F800447C87 /* Products */;
+					ProjectRef = 89A552C517BEC7F800447C87 /* XMLRPC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				89A5510C17BEC7CC00447C87 /* ROSViewer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		89A553BB17BEC7FA00447C87 /* librosobjc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = librosobjc.a;
+			remoteRef = 89A553BA17BEC7FA00447C87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89A553BD17BEC7FA00447C87 /* rosobjcTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = rosobjcTests.xctest;
+			remoteRef = 89A553BC17BEC7FA00447C87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89A553BF17BEC7FA00447C87 /* rosobjc-osx.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "rosobjc-osx.framework";
+			remoteRef = 89A553BE17BEC7FA00447C87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89A553C117BEC7FA00447C87 /* rosobjc-osxTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = folder;
+			path = "rosobjc-osxTests.xctest";
+			remoteRef = 89A553C017BEC7FA00447C87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89A553DB17BEC7FA00447C87 /* XMLRPC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XMLRPC.framework;
+			remoteRef = 89A553DA17BEC7FA00447C87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89A553DD17BEC7FA00447C87 /* libXMLRPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libXMLRPC.a;
+			remoteRef = 89A553DC17BEC7FA00447C87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89A553DF17BEC7FA00447C87 /* XMLRPCUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XMLRPCUnitTests.octest;
+			remoteRef = 89A553DE17BEC7FA00447C87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		89A5510B17BEC7CC00447C87 /* Resources */ = {
@@ -155,6 +836,44 @@
 				89A5512317BEC7CD00447C87 /* Default.png in Resources */,
 				89A5512517BEC7CD00447C87 /* Default@2x.png in Resources */,
 				89A5512717BEC7CD00447C87 /* Default-568h@2x.png in Resources */,
+				89A552D817BEC7F800447C87 /* .gitignore in Resources */,
+				89A552D917BEC7F800447C87 /* .hgignore in Resources */,
+				89A552EF17BEC7F800447C87 /* LICENSE.txt in Resources */,
+				89A552F017BEC7F800447C87 /* README.markdown in Resources */,
+				89A5534C17BEC7F800447C87 /* About.txt in Resources */,
+				89A5534E17BEC7F800447C87 /* About.txt in Resources */,
+				89A5535617BEC7F800447C87 /* README.txt in Resources */,
+				89A5535717BEC7F800447C87 /* README.md in Resources */,
+				89A5536117BEC7F800447C87 /* InfoPlist.strings in Resources */,
+				89A5536217BEC7F800447C87 /* rosobjc-osxTests-Info.plist in Resources */,
+				89A5536417BEC7F800447C87 /* InfoPlist.strings in Resources */,
+				89A5536517BEC7F800447C87 /* rosobjcTests-Info.plist in Resources */,
+				89A5536717BEC7F800447C87 /* TODO in Resources */,
+				89A5536817BEC7F800447C87 /* .gitignore in Resources */,
+				89A5536917BEC7F800447C87 /* Common.xcconfig in Resources */,
+				89A5536A17BEC7F800447C87 /* CommonDevelopment.xcconfig in Resources */,
+				89A5536B17BEC7F800447C87 /* CommonRelease.xcconfig in Resources */,
+				89A5536C17BEC7F800447C87 /* XMLRPC.xcconfig in Resources */,
+				89A5536D17BEC7F800447C87 /* XMLRPCDevelopment.xcconfig in Resources */,
+				89A5536E17BEC7F800447C87 /* XMLRPCRelease.xcconfig in Resources */,
+				89A5536F17BEC7F800447C87 /* XMLRPCUnitTests.xcconfig in Resources */,
+				89A5537017BEC7F800447C87 /* XMLRPCUnitTestsDevelopment.xcconfig in Resources */,
+				89A5537117BEC7F800447C87 /* XMLRPCUnitTestsRelease.xcconfig in Resources */,
+				89A5537217BEC7F800447C87 /* InfoPlist.strings in Resources */,
+				89A5537317BEC7F800447C87 /* LICENSE.md in Resources */,
+				89A5537617BEC7F800447C87 /* README.md in Resources */,
+				89A5537717BEC7F800447C87 /* TestCases.plist in Resources */,
+				89A5537817BEC7F800447C87 /* XMLRPC-Info.plist in Resources */,
+				89A5537917BEC7F800447C87 /* XMLRPCUnitTests-Info.plist in Resources */,
+				89A5537A17BEC7F800447C87 /* AlternativeDateFormatsTestCase.xml in Resources */,
+				89A5537B17BEC7F800447C87 /* DefaultTypeTestCase.xml in Resources */,
+				89A5537C17BEC7F800447C87 /* EmptyBooleanTestCase.xml in Resources */,
+				89A5537D17BEC7F800447C87 /* EmptyDataTestCase.xml in Resources */,
+				89A5537E17BEC7F800447C87 /* EmptyDoubleTestCase.xml in Resources */,
+				89A5537F17BEC7F800447C87 /* EmptyIntegerTestCase.xml in Resources */,
+				89A5538017BEC7F800447C87 /* EmptyStringTestCase.xml in Resources */,
+				89A5538117BEC7F800447C87 /* SimpleArrayTestCase.xml in Resources */,
+				89A5538217BEC7F800447C87 /* SimpleStructTestCase.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +886,54 @@
 			files = (
 				89A5511D17BEC7CD00447C87 /* main.m in Sources */,
 				89A5512117BEC7CD00447C87 /* RBAppDelegate.m in Sources */,
+				89A552DA17BEC7F800447C87 /* DDData.m in Sources */,
+				89A552DB17BEC7F800447C87 /* DDNumber.m in Sources */,
+				89A552DC17BEC7F800447C87 /* DDRange.m in Sources */,
+				89A552DD17BEC7F800447C87 /* HTTPAuthenticationRequest.m in Sources */,
+				89A552DE17BEC7F800447C87 /* HTTPConnection.m in Sources */,
+				89A552DF17BEC7F800447C87 /* HTTPMessage.m in Sources */,
+				89A552E017BEC7F800447C87 /* HTTPServer.m in Sources */,
+				89A552E117BEC7F800447C87 /* MultipartFormDataParser.m in Sources */,
+				89A552E217BEC7F800447C87 /* MultipartMessageHeader.m in Sources */,
+				89A552E317BEC7F800447C87 /* MultipartMessageHeaderField.m in Sources */,
+				89A552E417BEC7F800447C87 /* HTTPAsyncFileResponse.m in Sources */,
+				89A552E517BEC7F800447C87 /* HTTPDataResponse.m in Sources */,
+				89A552E617BEC7F800447C87 /* HTTPDynamicFileResponse.m in Sources */,
+				89A552E717BEC7F800447C87 /* HTTPErrorResponse.m in Sources */,
+				89A552E817BEC7F800447C87 /* HTTPFileResponse.m in Sources */,
+				89A552E917BEC7F800447C87 /* HTTPRedirectResponse.m in Sources */,
+				89A552EA17BEC7F800447C87 /* WebSocket.m in Sources */,
+				89A5534D17BEC7F800447C87 /* GCDAsyncSocket.m in Sources */,
+				89A5534F17BEC7F800447C87 /* DDAbstractDatabaseLogger.m in Sources */,
+				89A5535017BEC7F800447C87 /* DDASLLogger.m in Sources */,
+				89A5535117BEC7F800447C87 /* DDFileLogger.m in Sources */,
+				89A5535217BEC7F800447C87 /* DDLog.m in Sources */,
+				89A5535317BEC7F800447C87 /* DDTTYLogger.m in Sources */,
+				89A5535417BEC7F800447C87 /* ContextFilterLogFormatter.m in Sources */,
+				89A5535517BEC7F800447C87 /* DispatchQueueLogFormatter.m in Sources */,
+				89A5535817BEC7F800447C87 /* ROSCore.m in Sources */,
+				89A5535917BEC7F800447C87 /* ROSMsg.m in Sources */,
+				89A5535A17BEC7F800447C87 /* ROSNode.m in Sources */,
+				89A5535C17BEC7F800447C87 /* ROSSocket.m in Sources */,
+				89A5535D17BEC7F800447C87 /* ROSUDP.m in Sources */,
+				89A5535E17BEC7F800447C87 /* ROSXMLRPC.m in Sources */,
+				89A5535F17BEC7F800447C87 /* RPCConnection.m in Sources */,
+				89A5536017BEC7F800447C87 /* RPCResponse.m in Sources */,
+				89A5536317BEC7F800447C87 /* rosobjc_osxTests.m in Sources */,
+				89A5536617BEC7F800447C87 /* rosobjcTests.m in Sources */,
+				89A5537417BEC7F800447C87 /* NSData+Base64.m in Sources */,
+				89A5537517BEC7F800447C87 /* NSStringAdditions.m in Sources */,
+				89A553A317BEC7F800447C87 /* XMLRPCConnection.m in Sources */,
+				89A553A417BEC7F800447C87 /* XMLRPCConnectionManager.m in Sources */,
+				89A553A517BEC7F800447C87 /* XMLRPCDefaultEncoder.m in Sources */,
+				89A553A617BEC7F800447C87 /* XMLRPCEventBasedParser.m in Sources */,
+				89A553A717BEC7F800447C87 /* XMLRPCEventBasedParserDelegate.m in Sources */,
+				89A553A817BEC7F800447C87 /* XMLRPCRequest.m in Sources */,
+				89A553A917BEC7F800447C87 /* XMLRPCResponse.m in Sources */,
+				89A553E217BEC99000447C87 /* RBServerSelectorViewController.m in Sources */,
+				89A553E517BECDF400447C87 /* RBMainMenuViewController.m in Sources */,
+				89A22E0A17C06C5300A90D38 /* RBTopicViewController.m in Sources */,
+				89A22E1717C1577F00A90D38 /* ROSGenMsg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +944,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				89A5511A17BEC7CD00447C87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89A5525617BEC7F800447C87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89A5525717BEC7F800447C87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89A5525E17BEC7F800447C87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89A5525F17BEC7F800447C87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89A5527017BEC7F800447C87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89A5527117BEC7F800447C87 /* English */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -281,6 +1072,7 @@
 				89A5512C17BEC7CD00447C87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
