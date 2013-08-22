@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8974C60917C2C243007529D3 /* RBPublisherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8974C60817C2C243007529D3 /* RBPublisherViewController.m */; };
 		89A22E0A17C06C5300A90D38 /* RBTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A22E0917C06C5300A90D38 /* RBTopicViewController.m */; };
 		89A22E1717C1577F00A90D38 /* ROSGenMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A22E1617C1577F00A90D38 /* ROSGenMsg.m */; };
 		89A5511117BEC7CC00447C87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A5511017BEC7CC00447C87 /* UIKit.framework */; };
@@ -160,6 +161,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8974C60717C2C243007529D3 /* RBPublisherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBPublisherViewController.h; sourceTree = "<group>"; };
+		8974C60817C2C243007529D3 /* RBPublisherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBPublisherViewController.m; sourceTree = "<group>"; };
 		89A22E0817C06C5300A90D38 /* RBTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTopicViewController.h; sourceTree = "<group>"; };
 		89A22E0917C06C5300A90D38 /* RBTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTopicViewController.m; sourceTree = "<group>"; };
 		89A22E1517C1577F00A90D38 /* ROSGenMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROSGenMsg.h; path = ../scripts/ROSGenMsg.h; sourceTree = "<group>"; };
@@ -378,6 +381,8 @@
 				89A553E117BEC99000447C87 /* RBServerSelectorViewController.m */,
 				89A553E317BECDF400447C87 /* RBMainMenuViewController.h */,
 				89A553E417BECDF400447C87 /* RBMainMenuViewController.m */,
+				8974C60717C2C243007529D3 /* RBPublisherViewController.h */,
+				8974C60817C2C243007529D3 /* RBPublisherViewController.m */,
 				89A22E0817C06C5300A90D38 /* RBTopicViewController.h */,
 				89A22E0917C06C5300A90D38 /* RBTopicViewController.m */,
 				89A5511717BEC7CD00447C87 /* Supporting Files */,
@@ -799,7 +804,7 @@
 		};
 		89A553C117BEC7FA00447C87 /* rosobjc-osxTests.xctest */ = {
 			isa = PBXReferenceProxy;
-			fileType = folder;
+			fileType = wrapper.cfbundle;
 			path = "rosobjc-osxTests.xctest";
 			remoteRef = 89A553C017BEC7FA00447C87 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -905,6 +910,7 @@
 				89A552EA17BEC7F800447C87 /* WebSocket.m in Sources */,
 				89A5534D17BEC7F800447C87 /* GCDAsyncSocket.m in Sources */,
 				89A5534F17BEC7F800447C87 /* DDAbstractDatabaseLogger.m in Sources */,
+				8974C60917C2C243007529D3 /* RBPublisherViewController.m in Sources */,
 				89A5535017BEC7F800447C87 /* DDASLLogger.m in Sources */,
 				89A5535117BEC7F800447C87 /* DDFileLogger.m in Sources */,
 				89A5535217BEC7F800447C87 /* DDLog.m in Sources */,

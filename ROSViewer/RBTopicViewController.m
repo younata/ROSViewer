@@ -32,6 +32,8 @@
     tv.scrollsToTop = YES;
     tv.editable = NO;
     
+    self.navigationItem.title = _topic;
+    
     [self.view addSubview:tv];
     
     [_node subscribe:_topic callback:^(ROSMsg *m){
@@ -42,7 +44,6 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             tv.text = [tv.text stringByAppendingString:[@"\n---\n" stringByAppendingString:d]];
             [tv scrollRangeToVisible:NSMakeRange([tv.text length] - [d length], [d length])];
-
         });
         
     }];

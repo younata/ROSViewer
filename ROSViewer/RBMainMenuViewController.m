@@ -8,6 +8,7 @@
 
 #import "RBMainMenuViewController.h"
 #import "RBTopicViewController.h"
+#import "RBPublisherViewController.h"
 
 #import "rosobjc.h"
 #import "ROSCore.h"
@@ -73,6 +74,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.navigationItem.title = ROS_MASTER_URI;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(loadData)];
     [self loadData];
@@ -140,6 +143,7 @@
         [self.navigationController pushViewController:tvc animated:YES];
     } else if (indexPath.section == 1) {
         // We want to publish to it...
+        
     }
 }
 
