@@ -30,7 +30,8 @@
     self = [super initWithStyle:style];
     if (self) {
         ROS_MASTER_URI = [[NSUserDefaults standardUserDefaults] objectForKey:@"ROS_MASTER_URI"];
-        [[ROSCore sharedCore] setUri:ROS_MASTER_URI];
+        [[ROSCore sharedCore] setMasterURI:ROS_MASTER_URI];
+        
         [[ROSCore sharedCore] setInitialized:YES];
         node = [[ROSCore sharedCore] createNode:@"testNode"];
     }
@@ -135,15 +136,15 @@
     NSArray *a = datasource[indexPath.section];
     NSString *topic = [a objectAtIndex:indexPath.row];
     if (indexPath.section == 0) {
-        // We want to view it...
-        
         RBTopicViewController *tvc = [[RBTopicViewController alloc] init];
         tvc.node = node;
         tvc.topic = topic;
         [self.navigationController pushViewController:tvc animated:YES];
     } else if (indexPath.section == 1) {
-        // We want to publish to it...
-        
+        RBPublisherViewController *pvc = [[RBPublisherViewController alloc] init];
+        pvc.topic = topic;
+        pvc.node = node;
+        [self.navigationController pushViewController:pvc animated:YES];
     }
 }
 

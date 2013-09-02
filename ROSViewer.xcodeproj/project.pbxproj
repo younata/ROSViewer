@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8928C14417D131C0009078C2 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8928C14317D131C0009078C2 /* XMLReader.m */; };
 		8974C60917C2C243007529D3 /* RBPublisherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8974C60817C2C243007529D3 /* RBPublisherViewController.m */; };
 		89A22E0A17C06C5300A90D38 /* RBTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A22E0917C06C5300A90D38 /* RBTopicViewController.m */; };
 		89A22E1717C1577F00A90D38 /* ROSGenMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A22E1617C1577F00A90D38 /* ROSGenMsg.m */; };
@@ -161,6 +162,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8928C14217D131C0009078C2 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		8928C14317D131C0009078C2 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		8974C60717C2C243007529D3 /* RBPublisherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBPublisherViewController.h; sourceTree = "<group>"; };
 		8974C60817C2C243007529D3 /* RBPublisherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBPublisherViewController.m; sourceTree = "<group>"; };
 		89A22E0817C06C5300A90D38 /* RBTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTopicViewController.h; sourceTree = "<group>"; };
@@ -575,6 +578,8 @@
 				89A5525117BEC7F800447C87 /* RPCConnection.m */,
 				89A5525217BEC7F800447C87 /* RPCResponse.h */,
 				89A5525317BEC7F800447C87 /* RPCResponse.m */,
+				8928C14217D131C0009078C2 /* XMLReader.h */,
+				8928C14317D131C0009078C2 /* XMLReader.m */,
 			);
 			path = rosobjc;
 			sourceTree = "<group>";
@@ -923,6 +928,7 @@
 				89A5535C17BEC7F800447C87 /* ROSSocket.m in Sources */,
 				89A5535D17BEC7F800447C87 /* ROSUDP.m in Sources */,
 				89A5535E17BEC7F800447C87 /* ROSXMLRPC.m in Sources */,
+				8928C14417D131C0009078C2 /* XMLReader.m in Sources */,
 				89A5535F17BEC7F800447C87 /* RPCConnection.m in Sources */,
 				89A5536017BEC7F800447C87 /* RPCResponse.m in Sources */,
 				89A5536317BEC7F800447C87 /* rosobjc_osxTests.m in Sources */,
@@ -1040,6 +1046,7 @@
 		89A5512B17BEC7CD00447C87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rachel Brindle (U7TC7DBTGN)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ROSViewer/ROSViewer-Prefix.pch";
 				INFOPLIST_FILE = "ROSViewer/ROSViewer-Info.plist";
@@ -1051,6 +1058,7 @@
 		89A5512C17BEC7CD00447C87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rachel Brindle (U7TC7DBTGN)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ROSViewer/ROSViewer-Prefix.pch";
 				INFOPLIST_FILE = "ROSViewer/ROSViewer-Info.plist";

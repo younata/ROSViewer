@@ -8,6 +8,7 @@
 
 #import "RBPublisherViewController.h"
 #import "rosobjc.h"
+#import "ROSGenMsg.h"
 
 @interface RBPublisherViewController ()
 
@@ -24,18 +25,30 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewWillAppear:animated];
     
-    if (_topic == nil && _messageType == nil) {
-        _topic = @"/test";
+    // eh, fuck it.
+    // The original intent was to have this publish different message types, from different sources
+    // e.g. have gyroscope/magnetometer/accelerometer updates publish geometry_msgs/Vector3 on the specified topic
+    // but, that's not going to happen for version zero, so you just get "Hello World!\n" every second or so.
+    
+    message = [[UITextField alloc] initWithFrame:CGRectMake(0,0,0,0)];
+    message.text = @"Hello World!\n";
+    
+    if (_messageType == nil) {
         _messageType = @"std_msgs/string";
     }
     
     CGFloat w = self.view.frame.size.width;
-    CGFloat h = self.view.frame.size.height;
+    //CGFloat h = self.view.frame.size.height;
     
+    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(w/2-120, 20, 240, 20)];
+    l.text = @"Go back to stop publishing.";
+    [self.view addSubview:l];
+    
+    /*
     topicField = [[UITextField alloc] initWithFrame:CGRectMake(w/2-120, 20, 240, 20)];
     topicField.placeholder = @"/test";
     
@@ -46,11 +59,31 @@
     tv = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, w, h-60)];
     tv.delegate = self;
     tv.dataSource = self;
+     */
     
+    dispatch_queue_t queue = dispatch_queue_create("hello", 0);
+    [self announceMessagePublication];
+    run = YES;
+    
+    dispatch_async(queue, ^{
+        while (run) {
+            ROSMsgstd_msgsString *msg = [[ROSMsgstd_msgsString alloc] init];
+            msg.data = message.text;
+            [_node publishMsg:msg Topic:_topic];
+            sleep(10);
+        }
+    });
     
     [self.view addSubview:topicField];
     
 	// Do any additional setup after loading the view.
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    run = NO;
+    [_node stopPublishingTopic:_topic];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,12 +92,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)announceMessagePublication
+{
+    if (!_node) {
+        _node = [[ROSCore sharedCore] createNode:@"testNode"];
+    }
+    [_node advertize:_topic msgType:_messageType];
+}
+
 #pragma mark - UITableViewDelegate
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
         _messageType = [messageTypes objectAtIndex:indexPath.row];
+        
     } else if (indexPath.section == 1) {
         _datasource = [datasources objectAtIndex:indexPath.row];
     }

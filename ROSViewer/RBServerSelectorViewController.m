@@ -45,7 +45,10 @@
     if (s != nil)
         tf.text = s;
     
-    //tf.backgroundColor = [UIColor whiteColor];
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        tf.frame = CGRectMake(w/2 - 120, 80, 240, 40);
+    }
+    
     self.navigationItem.title = @"ROSViewer";
     
     [self.view addSubview:tf];

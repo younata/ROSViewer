@@ -45,7 +45,6 @@
             tv.text = [tv.text stringByAppendingString:[@"\n---\n" stringByAppendingString:d]];
             [tv scrollRangeToVisible:NSMakeRange([tv.text length] - [d length], [d length])];
         });
-        
     }];
 }
 
@@ -56,7 +55,7 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [_node shutdown:@""];
+    [_node unSubscribeFromTopic:_topic];
 }
 
 - (void)didReceiveMemoryWarning
