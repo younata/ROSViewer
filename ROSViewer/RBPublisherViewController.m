@@ -33,12 +33,13 @@
     // The original intent was to have this publish different message types, from different sources
     // e.g. have gyroscope/magnetometer/accelerometer updates publish geometry_msgs/Vector3 on the specified topic
     // but, that's not going to happen for version zero, so you just get "Hello World!\n" every second or so.
+    _topic = @"/test";
     
     message = [[UITextField alloc] initWithFrame:CGRectMake(0,0,0,0)];
     message.text = @"Hello World!\n";
     
     if (_messageType == nil) {
-        _messageType = @"std_msgs/string";
+        _messageType = @"std_msgs/String";
     }
     
     CGFloat w = self.view.frame.size.width;
@@ -69,9 +70,11 @@
         while (run) {
             ROSMsgstd_msgsString *msg = [[ROSMsgstd_msgsString alloc] init];
             msg.data = message.text;
-            [_node publishMsg:msg Topic:_topic];
+            if (![_node publishMsg:msg Topic:_topic])
+                break;
             sleep(10);
         }
+        [_node stopPublishingTopic:_topic];
     });
     
     [self.view addSubview:topicField];
